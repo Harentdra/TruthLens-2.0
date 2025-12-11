@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthLens - Fake Message Detection Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-search"></i></div>
+                <div>
+                    <h1>TruthLens</h1>
+                    <div class="tagline">Fake Message Detection Web Page</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section class="hero">
+                <h2>Uncover the Truth Behind Messages</h2>
+                <p>TruthLens detects suspicious contents inside any short text or message.</p>
+            </section>
+
+            <section class="analyzer">
+                <div class="input-group">
+                    <label for="message-input">Enter any message that contains a link to analyze:</label>
+                    <textarea id="message-input" class="text-input" placeholder="Paste any links to verify..."></textarea>
+                </div>
+
+                <button id="analyze-btn" class="analyze-btn">
+                    <i class="fas fa-microscope"></i> Analyze Message
+                </button>
+
+               
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Analyzing message…</p>
+                </div>
+
+                <div id="result" class="result">
+                    <div class="result-icon"></div>
+                    <h3 id="result-title"></h3>
+                    <p id="result-message"></p>
+
+                    <div class="confidence">
+                        Confidence: <span id="confidence-value"></span>%
+                        <div class="confidence-meter">
+                            <div id="confidence-fill" class="confidence-fill"></div>
+                        </div>
+                    </div>
+
+                    
+                    
+                </div>
+            </section>
+
+            <section class="stats">
+                <h2>Malaysia Impact Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="stat-value" data-target="2847291">0</div>
+                        <div class="stat-label">Messages Analyzed</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="stat-value" data-target="412856">0</div>
+                        <div class="stat-label">Scams Detected</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-link-slash"></i></div>
+                        <div class="stat-value" data-target="289432">0</div>
+                        <div class="stat-label">Malicious Links Blocked</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-value" data-target="1245678">0</div>
+                        <div class="stat-label">Users Helped</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 TruthLens Prototype</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
