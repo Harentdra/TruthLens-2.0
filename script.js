@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'freegift','shocking secret','they don\'t want you to know',
         'conspiracy','hoax','scam','clickbait','unbelievable',
         'hidden secret','urgent','verify your account','bank','otp',
-        'claim','refund','limited time','government aid','rm1',
+        'claim','refund','limited time','government aid','rm1','html',
         'parcel','delivery issue','bit.ly','tinyurl','reward','win',
         'you\'ve won','rm','hadiah','bantuan','tuntut','menang'
     ];
@@ -123,5 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         updateCount();
     });
+
 
 });
